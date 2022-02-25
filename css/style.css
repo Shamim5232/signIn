@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,900;1,300;1,400;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+html{
+    font-size: 65.5%;
+}
+.container{
+    width: 50rem;
+    background: #00ffff;
+    padding: 3rem;
+    border-radius: .5rem;
+    /* overflow-x: hidden; */
+    position: relative;
+
+}
+.container .heading,
+.singInSection .sing_up .heading{
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    position: relative;
+    z-index: 1;
+}
+.container .heading::before,
+.singInSection .sing_up .heading::before {
+    content: '';
+    position: absolute;
+    top: 1.8rem;
+    left: 1rem;
+    height: 0.3rem;
+    width: 15rem;
+    background: #ffffff;
+    z-index: -1;
+    margin: auto;
+}
+.container .heading::after,
+.singInSection .sing_up .heading::after {
+    content: '';
+    position: absolute;
+    top: 1.8rem;
+    right: 1rem;
+    height: 0.3rem;
+    width: 15rem;
+    background: #ffffff;
+    z-index: -1;
+    margin: auto;
+}
+.container .userImg {
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: 180px;
+    border: 8px solid cyan;
+}
+.container .userImg img{
+    height: 100%;
+    width: 100%;
+}
+.container form label{
+    display: block;
+    font-size: 1.6rem;
+    color: black;
+    text-transform: capitalize;
+    margin: 1ren 0;
+    padding: .5rem 0;
+
+}
+ form input[type="text"],input[type="email"],input[type="password"],input[type="number"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1rem .5rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+}
+.container form .link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.container form .link p,
+.container form .link a{
+    font-size: 1.6rem;
+}
+.container form .link a{
+    text-decoration: none;
+}
+.btn{
+    display: inline-block;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1rem 0;
+    margin: 1.6rem 0;
+    font-size: 2rem;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: .5rem;
+    color: #ff00bf;
+    border: .1rem solid #7e7a7a;
+    position: relative;
+    transition: .5s;
+    
+}
+.btn:hover{
+    background: gray;
+    color: white;
+}
+
+.container .creat{
+    font-size: 1.6rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+
+.singInSection{
+   background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+   z-index: 10000;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   clip-path: circle(0.0% at 100% 0);
+   transition: .2s;
+}
+ .active{
+    clip-path: circle(141.2% at 100% 0);
+}
+.sing_up{
+    width: 100rem;
+    background: #444;
+    padding: 2rem;
+    border-radius: .5rem;
+    margin: 3rem;
+}
+.singInSection .fullName{
+    width: 100%;
+    /* border: 1px solid; */
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.singInSection .fullName .first_name,
+.singInSection .fullName .Last_name{
+    width: 48%;
+    /* float: left;
+    margin-right: 2%; */
+}
+
+.singInSection label{
+    display: block;
+    font-size: 2rem;
+    padding: .5rem 0;
+    margin: .2rem 0;
+    color: #fff;
+}
+.singInSection .fullName input{
+    width: 100%;
+}
+.sing_up .heading{
+    color: #fff;
+}
+.singInSection .password_div{
+    width: 100%;
+    /* border: 1px solid; */
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.singInSection .password_div .pass,
+.singInSection .password_div .re_pass{
+    width: 48%;
+    /* float: left;
+    margin-right: 2%; */
+}
+.gender{
+    padding: 1rem 0;
+}
+.gender label{
+    display: inline-block;
+    margin-right: .5rem;
+}
+.gender span{
+    font-size: 2rem;
+    display: inline-block;
+    margin-left: .5rem;
+    color: white;
+}
+.dateOfBirth{
+    display: flex;
+    align-items: center;
+}
+.dateContainer{
+    display: flex;
+}
+.dateContainer label{
+    display: inline-block;
+}
+.dateOfBirth .dateTitle{
+    margin-right: .8rem;
+}
+.dateContainer .day , .month, .year{
+    width: 25rem;
+    /* border: 1px solid ; */
+    margin-right: 1rem;
+}
+.dateContainer select{
+    width: 65%;
+    border: none;
+    padding: .8rem .3rem;
+    outline: none;
+    border-radius: .5rem;
+    margin-left: .8rem;
+}
+.container form .link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: rem;
+}
+.singInSection form .link p,
+.singInSection form .link a{
+    font-size: 1.6rem;
+    color: #fff;
+
+}
+.singInSection form .link a{
+    text-decoration: none;
+}
+.singInSection .creat{
+    font-size: 1.6rem;
+    text-align: center;
+    color: #fff;
+
+}
+.singInSection .creat a{
+    color: orange;
+}
+.singInSection .sing_up .heading::before {
+    left: 26rem;
+}
+.singInSection .sing_up .heading::after {
+    right: 26rem;
+}
+
+#closeBtn{
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    cursor: pointer;
+}
+/* forgot password part start hrer  */
+.forgotPart{
+    position: fixed;
+    /* border: 1px solid; */
+    width: 80%;
+    overflow: hidden;
+    z-index: 100000;
+    background: white;
+    border-radius: .5rem;
+    padding: 2rem;
+    margin: 2rem;
+    box-shadow: 0 0 0 100vh rgba(0, 0, 0,.5);
+    backdrop-filter: blur(.5rem);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: .2s;
+}
+.forgotPart.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.forgotPart .forgot_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.forgotLeft,.forgotRight{
+    width: 50%;
+    padding: 3rem;
+}
+.forgotLeft img{
+    width: 100%;
+    height: 100%;
+}
+.forgotRight .forgotIcon{
+    width: 100%;
+    /* border: 1px solid; */
+    text-align: center;
+}
+.forgotRight img{
+    height: 120px;
+    width: 120px;
+}
+.forgotRight input[type="email"]{
+    margin-top: 2rem;
+    border: .1rem solid orange;
+    text-indent: 1rem;
+}
+.forgotRight input[type="reset"]{
+    padding: .5rem 0;
+}
+.forgotPart .backLogin{
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+#resetClsBtn{
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}

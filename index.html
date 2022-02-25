@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <!-- font awesome link here  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- custom css file here  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body background="images/background.jpg" style="background-repeat: no-repeat; background-size: cover; backdrop-filter: blur(.5rem);">
+    
+    <div class="container">
+        <div class="userImg">
+            <img src="images/user.jpg" alt="">
+        </div>
+        <h2 class="heading">sign in</h2>
+        <form action="">
+            <div class="form-group">
+                <label for="userName">User Name</label>
+                <input type="text" id="userName" name="UserName" value="" required placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <label for="Email">Eamil</label>
+                <input type="email" id="Email" name="email" value="" required placeholder="Enter Your Email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" value="" required placeholder="Enter Your Password">
+            </div>
+            <div class="link">
+                <p><input type="checkbox" value=""> Remember Me</p>
+                <a href="#" id="resetPass">Forgot Password ?</a>
+            </div>
+            <input type="submit" value="Submit" class="btn">
+            <p class="creat">Not Registered ? <a href="#" id="CrtBtn">Create Account</a></p>
+            
+        </form>
+    </div>
+    <!-- create account part start  -->
+    <section class="singInSection">
+        <div id="closeBtn" class="fas fa-times"></div>
+      <div class="sing_up">
+        <h2 class="heading">sign Up</h2>
+        <form action="">
+            <div class="fullName">
+                <div class="first_name">
+                    <label for="userName">First Name</label>
+                    <input type="text" id="userName" name="UserName" value="" required placeholder="Enter Your Name">
+                </div>
+                <div class="Last_name">
+                    <label for="userName">Last Name</label>
+                    <input type="text" id="userName" name="UserName" value="" required placeholder="Enter Your Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Email">Eamil</label>
+                <input type="email" id="Email" name="email" value="" required placeholder="Enter Your Email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="number" id="phone" name="phone" value="" required placeholder="Enter Your Number">
+            </div>
+            <div class="password_div">
+               <div class="pass">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" value="" required placeholder="Enter Your Password">
+               </div>
+               <div class="re_pass">
+                <label for="password">Re-type password</label>
+                <input type="password" id="password" name="password" value="" required placeholder="Enter Your Password">
+            </div>
+            </div>
+            <div class="gender">
+                <label for="Gender">Gender:</label>
+                <input type="radio" value="male" name="sex"> <span>Male</span> &nbsp;&nbsp; <input type="radio" value="female" name="sex"> <span>Female</span>
+            </div>
+            <div class="dateOfBirth">
+                <label for="" class="dateTitle">Date Of Birth:</label>
+               <div class="dateContainer">
+                <div class="day">
+                    <label for="day">Day :</label>
+                    <select name="day" id="day">
+                        <option value="">--select Day--</option>
+                        <option value="01">01</option>
+                        <option value="01">02</option>
+                        <option value="01">03</option>
+                        <option value="01">04</option>
+                        <option value="01">05</option>
+                        <option value="01">06</option>
+                    </select>
+                </div>
+                <div class="month">
+                    <label for="month">Month :</label>
+                    <select name="month" id="month">
+                        <option value="">--select Month--</option>
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                    </select>
+                </div>
+                <div class="year">
+                    <label for="year">Year :</label>
+                    <select name="year" id="day">
+                        <option value="">--select Year--</option>
+                        <option value="1999">1999</option>
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                    </select>
+                </div>
+               </div>
+            </div>
+            <div class="link">
+                <p><input type="checkbox" value=""> Remember Me</p>
+            </div>
+            <input type="submit" value="Register" class="btn">
+            <p class="creat">Already have an account ? <a href="#" id="SignIn">sign in</a></p>
+            
+        </form>
+      </div>
+    </section>
+    <!-- forgot section part start here  -->
+    <div  class="forgotPart">
+        <div id="resetClsBtn" class="fas fa-times" ></div>
+        <div class="forgot_container">
+            <div class="forgotLeft">
+                <img src="images/forgot.svg" alt="">
+            </div>
+            <div class="forgotRight">
+                <div class="forgotIcon">
+                    <img src="images/6814143.png" alt="">
+                </div>
+                <form action="">
+                    <div class="form-group">
+                        <input type="email" id="Email" name="email" value="" required placeholder="Enter Your Email">
+                    </div>
+                    <input type="reset" value="Reset Password" class="btn">
+                    <p class="backLogin">Back To Log In Page <a href="#" id="login">signin</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+<script src="js/main.js"></script>
+</body>
+</html>
